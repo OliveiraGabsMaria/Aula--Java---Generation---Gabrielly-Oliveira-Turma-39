@@ -21,23 +21,23 @@ public class Exercicio02 {
 		System.out.println("Digite o terceiro número:");
 		numero3 = leia.nextInt();
 		
-		if(numero1 > numero2 && numero2 > numero3) {
+		if(numero1 <= numero2 && numero2 <= numero3) {
 			System.out.println("Ordem: " + numero1 + " , " + numero2 + " , " + numero3);
 		}
-		if(numero1 > numero3 && numero3 > numero2) {
+		else if(numero1 <= numero3 && numero3 <= numero2) {
 			System.out.println("Ordem: " + numero1 + " , "+ numero3 + " , "+ numero2);
 		}
-		if(numero2 > numero1 && numero1 > numero3) {
+		else if(numero2 <= numero1 && numero1 <= numero3) {
 			System.out.println("Ordem: " + numero2 + " , " + numero1 + " , " + numero3);
 		}
-		if(numero2 > numero3 && numero3 > numero2) {
+		else if(numero2 <= numero3 && numero3 <= numero2) {
 			System.out.println("Ordem: " + numero2 + " , " + numero3 + " , " + numero1);
 		}
-		if(numero3 > numero2 && numero2 > numero1) {
+		else if(numero3 <= numero1 && numero1 <= numero1) {
 			System.out.println("Ordem: " + numero3 + " , " + numero2 + " , " + numero1);
 		}
-		if(numero3 > numero1 && numero1 > numero2) {
-			System.out.println("Ordem: " + numero1 + " , " + numero2 + " , " + numero3);
+		else {
+			System.out.println("Ordem: " + numero3 + " , " + numero2 + " , " + numero1);
 		}
 		
 		leia.close();
